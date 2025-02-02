@@ -64,6 +64,10 @@ function mostrarPreguntaDevolverRespuesta() {
 
 function hasAcertado() {
   if (respuesta === arrayConRespuestas[indiceDePreguntas]) {
+    let corazones = document.getElementById("corazones");
+    let nuevoCorazon = document.createElement("img");
+    nuevoCorazon.src = "heart.png";
+    corazones.appendChild(nuevoCorazon);
     alert("Has acertado, pulsa aceptar para continuar =)");
     aciertos++;
   } else {
