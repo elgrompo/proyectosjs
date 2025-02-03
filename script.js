@@ -63,7 +63,7 @@ function mostrarPreguntaDevolverRespuesta() {
 }
 
 function hasAcertado() {
-  if (respuesta === arrayConRespuestas[indiceDePreguntas]) {
+  if (respuesta === arrayConRespuestas[indiceDePreguntas] || respuesta === arrayConRespuestas[indiceDePreguntas] + " ") {
     let corazones = document.getElementById("corazones");
     let nuevoCorazon = document.createElement("img");
     nuevoCorazon.src = "heart.png";
